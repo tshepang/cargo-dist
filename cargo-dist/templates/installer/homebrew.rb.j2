@@ -1,0 +1,16 @@
+class {{ formula_class }} < Formula
+  {%- if desc %} desc "{{ desc }}" {% endif %}
+  {%- if homepage %} homepage "{{ homepage }}" {% endif %}
+  if Hardware::CPU.type == :arm
+    url "{{ inner.base_url }}/{{ arm64.id }}"
+    sha256 "{{ arm64.checksum }}"
+  else
+    url "{{ inner.base_url }}/{{ x86_64.id }}"
+    sha256 "{{ x86_64.checksum }}"
+  end
+  {% if license %} license "{{ license }}" {% endif %}
+
+  def install
+    bin.install {% for binary in binaries %}"{{ binary }}"{{ ", " if not loop.last else "" }} {% endfor %}
+  end
+end

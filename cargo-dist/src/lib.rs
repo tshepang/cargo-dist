@@ -17,7 +17,7 @@ use std::{
 
 use axoasset::LocalAsset;
 use backend::{
-    installer::{self, npm::NpmInstallerInfo, InstallerImpl},
+    installer::{self, homebrew::HomebrewInstallerInfo, npm::NpmInstallerInfo, InstallerImpl},
     templates::{TemplateEntry, TEMPLATE_INSTALLER_NPM},
 };
 use camino::{Utf8Path, Utf8PathBuf};
@@ -228,6 +228,7 @@ fn manifest_artifact(
         ArtifactKind::Installer(
             InstallerImpl::Powershell(info)
             | InstallerImpl::Shell(info)
+            | InstallerImpl::Homebrew(HomebrewInstallerInfo { inner: info, .. })
             | InstallerImpl::Npm(NpmInstallerInfo { inner: info, .. }),
         ) => {
             install_hint = Some(info.hint.clone());
@@ -579,6 +580,9 @@ fn generate_installer(dist: &DistGraph, style: &InstallerImpl) -> Result<()> {
             installer::powershell::write_install_ps_script(&dist.templates, info)?
         }
         InstallerImpl::Npm(info) => installer::npm::write_npm_project(&dist.templates, info)?,
+        InstallerImpl::Homebrew(info) => {
+            installer::homebrew::write_homebrew_formula(&dist.templates, info)?
+        }
     }
     Ok(())
 }
