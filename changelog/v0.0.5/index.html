@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark axo">
+    <head>
+        <title>cargo-dist</title>
+        
+        
+            <link rel="icon" href="/cargo-dist/favicon.ico" />
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <meta name="description" content="Shippable application packaging for Rust" />
+            <meta property="og:description" content="Shippable application packaging for Rust" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="cargo-dist" />
+        
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:image" content="https://www.axo.dev/meta_small.jpeg" />
+        
+        
+            <meta property="og:image:alt" content="axo" />
+        
+        
+            <meta name="twitter:creator" content="@axodotdev" />
+            <meta name="twitter:site" content="@axodotdev" />
+        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <link rel="stylesheet" href="/cargo-dist/oranda-v0.2.0.css" />
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-body">
+                
+                    <div class="repo_banner">
+                        <a href="https://github.com/axodotdev/cargo-dist">
+                            <div class="github-icon" aria-hidden="true"></div>
+                            Check out our GitHub!
+                        </a>
+                    </div>
+                
+
+                <main>
+                    <header>
+                        
+                        <h1 class="title">cargo-dist</h1>
+                        
+    <nav class="nav">
+        <ul>
+            <li><a href="/cargo-dist/">Home</a></li>
+
+            
+
+            
+                <li><a href="/cargo-dist/artifacts/">Install</a></li>
+            
+
+            
+                <li><a href="/cargo-dist/book/">Docs</a></li>
+            
+
+            
+
+            
+                <li><a href="/cargo-dist/changelog/">Changelog</a></li>
+            
+        </ul>
+    </nav>
+
+                    </header>
+
+                    
+<div>
+    <h1>Version 0.0.5 (2023-03-15)</h1>
+    <div class="releases-body">
+        
+        
+        <section class="release ">
+    <h2 class="hidden" id="tag-v0.0.5">
+        <a href="v0.0.5/">
+            
+                Version 0.0.5 (2023-03-15)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.5
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar 15 2023 at 19:17 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is a bug-fix release for an issue with cross-platform line endings that affected
+users who installed cargo-dist with <code>cargo install</code>. Prebuilt binaries were unaffected.
+Specifically folks reported in [#181] that they were seeing the Shell installer (for Mac and Linux)
+be generated with mixed CRLF and LF line endings, which was causing both functionality
+and development issues (git churn).</p>
+<p>For those unfamiliar- the line endings on Windows machines are different than those
+on Mac and Linux ones and it can cause a lot of unfortunate chaos.</p>
+<p>There are 2 styles of control characters to mark a line break in a text file:</p>
+<ul>
+<li><code>LF</code>, (<code>\n</code>), Linux/Mac: <code>LF</code> stands for "Line Feed"</li>
+<li><code>CRLF</code>, (<code>\r\n</code>), Windows: <code>CR</code> stands for "Carriage Return"</li>
+</ul>
+<p>The presence of CRLF line endings in a shell script will cause issues. Similarly LF
+line endings in a powershell script will cause issues. (Citation needed on the powershell
+thing but sure let's play it safe/idiomatic here.)</p>
+<p>The problem was that the <code>.crate</code> uploaded to crates.io had CRLF endings in some templates
+because <code>cargo publish</code> was run on windows and the git repo was configured to checkout files
+with platform-specific endings. The prebuilt binaries were checked out and built on linux
+(Github CI), and so only used LF endings.</p>
+<p>The reason we got <em>mixed</em> LF and CRLF is because the contents of the installer scripts come from
+mixed sources: the bulk comes from template files on disk, but a few key lines are injected
+programmatically by rust code with <code>writeln</code> (and <code>write</code> with manual <code>\n</code>). Note that Rust's
+println/writeln are guaranteed to emit LF on all platforms (because really CRLF should just be
+fazed out and platform-specific writeln would be a mess). This was good and desirable, the
+main screw up was the line endings in the stored template being forwarded verbatim instead
+of all being rewritten to LF.</p>
+<p>To be EXTRA SURE this doesn't happen in the future we just straight up rewrite all newlines
+before writing the final result, making the newlines stored in cargo-dist's git repo irrelevant.</p>
+
+    </div>
+</section>
+    </div>
+</div>
+
+                </main>
+            </div>
+
+            <footer>
+                
+                    <a href="https://github.com/axodotdev/cargo-dist"><div class="github-icon" aria-hidden="true"></div></a>
+                
+                <span>
+                    cargo-dist, MIT OR Apache-2.0
+                </span>
+            </footer>
+        </div>
+
+        
+            <script defer="true" data-domain="opensource.axo.dev" src="https://plausible.io/js/script.js"></script>
+        
+        
+
+        
+    </body>
+</html>

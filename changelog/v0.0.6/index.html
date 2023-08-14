@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark axo">
+    <head>
+        <title>cargo-dist</title>
+        
+        
+            <link rel="icon" href="/cargo-dist/favicon.ico" />
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <meta name="description" content="Shippable application packaging for Rust" />
+            <meta property="og:description" content="Shippable application packaging for Rust" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="cargo-dist" />
+        
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:image" content="https://www.axo.dev/meta_small.jpeg" />
+        
+        
+            <meta property="og:image:alt" content="axo" />
+        
+        
+            <meta name="twitter:creator" content="@axodotdev" />
+            <meta name="twitter:site" content="@axodotdev" />
+        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <link rel="stylesheet" href="/cargo-dist/oranda-v0.2.0.css" />
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-body">
+                
+                    <div class="repo_banner">
+                        <a href="https://github.com/axodotdev/cargo-dist">
+                            <div class="github-icon" aria-hidden="true"></div>
+                            Check out our GitHub!
+                        </a>
+                    </div>
+                
+
+                <main>
+                    <header>
+                        
+                        <h1 class="title">cargo-dist</h1>
+                        
+    <nav class="nav">
+        <ul>
+            <li><a href="/cargo-dist/">Home</a></li>
+
+            
+
+            
+                <li><a href="/cargo-dist/artifacts/">Install</a></li>
+            
+
+            
+                <li><a href="/cargo-dist/book/">Docs</a></li>
+            
+
+            
+
+            
+                <li><a href="/cargo-dist/changelog/">Changelog</a></li>
+            
+        </ul>
+    </nav>
+
+                    </header>
+
+                    
+<div>
+    <h1>Version 0.0.6 (2023-05-03)</h1>
+    <div class="releases-body">
+        
+        
+        <section class="release ">
+    <h2 class="hidden" id="tag-v0.0.6">
+        <a href="v0.0.6/">
+            
+                Version 0.0.6 (2023-05-03)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  5 2023 at 00:29 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This release is a pretty big improvement to cargo-dist's UX!</p>
+<ul>
+<li>
+<p><code>cargo dist init</code> is now interactive and useful for updating your config/install. This is especially useful for updating your project to a new version of cargo-dist, or enabling new installers, as the interactive UI will automatically prompt you to do so and help you keep your config coherent. It also reduces the chances of your CI script getting out of sync, as it runs generate-ci at the end for you. If you want the old non-interactive behaviour, just pass <code>--yes</code> which auto-accepts all recommendations.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/way-too-quickstart.html#setup" rel="noopener noreferrer">docs</a></li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/227" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">fixups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Support for generating an npm project that installs your app into node_modules! Just add "npm" to your installers (using <code>cargo dist init</code> for this is recommended, as it will prompt you to make any other necessary changes to your config).</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#npm" rel="noopener noreferrer">docs</a></li>
+<li>impl:
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/219" rel="noopener noreferrer">fixups</a></li>
+<li>@frol <a href="https://github.com/axodotdev/cargo-dist/pull/224" rel="noopener noreferrer">fix logging</a></li>
+<li>@shadows-withal <a href="https://github.com/axodotdev/cargo-dist/pull/228" rel="noopener noreferrer">support package.json keywords</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>cargo dist plan</code> is a new command for getting a local preview of what your release CI will build. (This is just a synonym for <code>cargo dist manifest</code> but with nicer defaults for what you <em>usually</em> want.)</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/way-too-quickstart.html#check-what-ci-will-build" rel="noopener noreferrer">docs</a></li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">initial impl as "status"</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/232" rel="noopener noreferrer">rename "status" to "plan"</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Bare <code>cargo dist</code> is no longer a synonym for <code>build</code> and now just prints help. This makes it a bit nicer to get your footing with cargo-dist, as we don't suddenly do builds or complain about not being initialized on first run.</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>Artifact names no longer contain redundant version numbers, so <code>my-app-v1.0.0-installer.sh</code> is now just <code>my-app-installer.sh</code>. This makes it possible to statically link the "latest" build with this format: <a href="https://github.com/axodotdev/cargo-dist/releases/latests/download/cargo-dist-installer.sh" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/releases/latests/download/cargo-dist-installer.sh</a></p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/commit/8a417f239ef8f8e3ab66c46cf7c3d26afaba1c87" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>The compression format used for executable-zips can now be set with <code>windows-archive</code> and <code>unix-archive</code> configs. Supported values include ".tar.gz", ".tar.xz", ".tar.zstd", and ".zip". The defaults (.zip on windows, .tar.xz elsewhere) are unchanged, as we believe those have the best balance of UX and compatibility.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#windows-archive" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>other great cleanups/fixes</p>
+<ul>
+<li>@AlexITC <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">fix typo at README.md</a></li>
+<li>@jwodder <a href="https://github.com/axodotdev/cargo-dist/pull/213" rel="noopener noreferrer">remove trailing spaces from templates</a></li>
+<li>@jwodder <a href="https://github.com/axodotdev/cargo-dist/pull/215" rel="noopener noreferrer">fix broken links in book</a></li>
+<li>@jwodder <a href="https://github.com/axodotdev/cargo-dist/pull/223" rel="noopener noreferrer">remove useless uses of cat from release.yml</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">factor out and use axoproject</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">factor out and use axocli</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/231" rel="noopener noreferrer">0.0.6 docs blitz</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/234" rel="noopener noreferrer">fix config subsetting</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+    </div>
+</div>
+
+                </main>
+            </div>
+
+            <footer>
+                
+                    <a href="https://github.com/axodotdev/cargo-dist"><div class="github-icon" aria-hidden="true"></div></a>
+                
+                <span>
+                    cargo-dist, MIT OR Apache-2.0
+                </span>
+            </footer>
+        </div>
+
+        
+            <script defer="true" data-domain="opensource.axo.dev" src="https://plausible.io/js/script.js"></script>
+        
+        
+
+        
+    </body>
+</html>

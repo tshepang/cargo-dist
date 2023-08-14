@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark axo">
+    <head>
+        <title>cargo-dist</title>
+        
+        
+            <link rel="icon" href="/cargo-dist/favicon.ico" />
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <meta name="description" content="Shippable application packaging for Rust" />
+            <meta property="og:description" content="Shippable application packaging for Rust" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="cargo-dist" />
+        
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:image" content="https://www.axo.dev/meta_small.jpeg" />
+        
+        
+            <meta property="og:image:alt" content="axo" />
+        
+        
+            <meta name="twitter:creator" content="@axodotdev" />
+            <meta name="twitter:site" content="@axodotdev" />
+        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <link rel="stylesheet" href="/cargo-dist/oranda-v0.2.0.css" />
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-body">
+                
+                    <div class="repo_banner">
+                        <a href="https://github.com/axodotdev/cargo-dist">
+                            <div class="github-icon" aria-hidden="true"></div>
+                            Check out our GitHub!
+                        </a>
+                    </div>
+                
+
+                <main>
+                    <header>
+                        
+                        <h1 class="title">cargo-dist</h1>
+                        
+    <nav class="nav">
+        <ul>
+            <li><a href="/cargo-dist/">Home</a></li>
+
+            
+
+            
+                <li><a href="/cargo-dist/artifacts/">Install</a></li>
+            
+
+            
+                <li><a href="/cargo-dist/book/">Docs</a></li>
+            
+
+            
+
+            
+                <li><a href="/cargo-dist/changelog/">Changelog</a></li>
+            
+        </ul>
+    </nav>
+
+                    </header>
+
+                    
+<div>
+    <h1>Version 0.0.3 (2023-02-27)</h1>
+    <div class="releases-body">
+        
+        
+        <section class="release ">
+    <h2 class="hidden" id="tag-v0.0.3">
+        <a href="v0.0.3/">
+            
+                Version 0.0.3 (2023-02-27)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.3
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Feb 27 2023 at 18:40 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>A major overhaul has been done to the design to rationalize some improperly defined features/behaviours. When you update to this version <strong>we recommend following these MIGRATION INSTRUCTIONS</strong>:</p>
+<ol>
+<li>(optional) delete <code>[profile.dist]</code> from your Cargo.toml</li>
+<li>run <code>cargo dist init --ci=github</code></li>
+<li>run <code>cargo dist generate-ci</code></li>
+</ol>
+<p>Performing Step 1 will result in Step 2 getting you our new recommended default profile; linux users were having issues with the debuginfo stuff.</p>
+<p>Step 2 will introduce default configuration to your Cargo.toml that's necessary for the new design to work reliably. You can add <code>--installer=shell</code> and <code>--installer=powershell</code> here if you want those to be setup automatically.</p>
+<p>Step 3 will completely blow away your release.yml CI with the new design. The overall approach is the same but everything is more consistent and coherent.</p>
+<p>The new design is described in detail in <a href="https://axodotdev.github.io/cargo-dist/book/" rel="noopener noreferrer">the new cargo-dist book</a>!</p>
+<h2>Configuration</h2>
+<p>You can now include persistent configuration for cargo-dist in <code>[workspace.metadata.dist]</code> and <code>[package.metadata.dist]</code>. <a href="https://axodotdev.github.io/cargo-dist/book/config.html#metadatadist" rel="noopener noreferrer">See the book for details</a>.</p>
+<h2>Artifact Modes</h2>
+<p>Previously cargo-dist had some vague notions of what it was supposed to do when you invoked it, because there were platform-specific artifacts like executable-zips but also more platform-agnostic ones like installer scripts. This result in flags like <code>--no-builds</code> with messy semantics and hacks to filter out artifacts we "don't want right now" in the CI scripts (<code>--no-builds</code> was is removed in this release, it was busted).</p>
+<p>Now cargo-dist can produce well-defined subsets of the all possible artifacts with the <code>--artifacts</code> flag:</p>
+<blockquote>
+<p>--artifacts = "local" | "global" | "all" | "host"</p>
+<p>Artifacts can be broken up into two major classes:</p>
+<ul>
+<li>local: made for each target system (executable-zips, symbols, MSIs...)</li>
+<li>global: made once (curl-sh installers, npm package, metadata...)</li>
+</ul>
+<p>("all" selects both of these at once)</p>
+<p>Having this distinction lets us run cargo-dist independently on multiple machines without collisions between the outputs by spinning up machines that run something like:</p>
+<ul>
+<li>linux-runner1 (get full manifest): cargo-dist manifest --artifacts=all --output-format=json</li>
+<li>linux-runner2 (get global artifacts): cargo-dist --artifacts=global</li>
+<li>linux-runner3 (get linux artifacts): cargo-dist --artifacts=local --target=x86_64-unknown-linux-gnu</li>
+<li>windows-runner (get windows artifacts): cargo-dist --artifacts=local --target=x86_64-pc-windows-msvc</li>
+</ul>
+<p>If let unspecified, we will pick a fuzzier "host" mode that builds "as much as possible" for the local system. This mode is appropriate for local testing/debugging/demoing. If no --target flags are passed on the CLI then "host" mode will try to intelligently guess which targets to build for, which may include building targets that aren't defined in your metadata.dist config (since that config may exclude the current machine!).</p>
+<p>The specifics of "host" mode are intentionally unspecified to enable us to provider better out-of-the-box UX for local usage. In CI environments you should always specify one of the other tree options!</p>
+</blockquote>
+<p>Note that the introduction of persistent Cargo.toml configuration is crucial to this semantic redesign, as it allows each invocation to be aware of the "full" set of artifacts across all platforms, and then filter down to it.</p>
+<p>If you pass <code>--installer</code>, <code>--ci</code>, or <code>--target</code> this will replace the Cargo.toml value for all packages for that invocation. This is most useful for <code>--target</code> in conjuction with <code>--artifacts=local</code> as it lets us precisely select which platform-specific artifacts to build on the current machine (all 3 of these flags can be passed repeatedly).</p>
+<p><strong>WARING!</strong> If you specify --artifacts and --target, the selected targets can only be a <em>subset</em> of the ones defined in your Cargo.toml. This ensures <code>cargo dist --artifacts=global</code> has behaviour consistent with <code>cargo dist --artifacts=local --target=...</code>, as global artifacts need to be aware of all targets at once. "host" mode bypasses this restriction so that runs of cargo dist on developer machines can do <em>something</em> useful even if the Cargo.toml doesn't know about the host platform.</p>
+<h2>Announcement/Release Selection</h2>
+<p>There is also now a <code>--tag</code> flag for specifying the git tag to use for announcing a new release. This tag must have a specific format detailed below. The tag serves two purposes:</p>
+<ul>
+<li>It specifies the subset of the workspace that we want to Announce/Release</li>
+<li>When using CI, it becomes the unique ID for a Github Release, which is necessary for everything to correctly compute download URLs</li>
+</ul>
+<p><code>cargo dist build</code> and <code>cargo dist manifest</code> now both require that you either specify a --tag that "makes sense", or that your workspace is simple enough for a tag to be computed for you. In CI, each git tag you push will create an independent run of cargo-dist's CI to make a Github Release for that tag, and each invocation of cargo-dist will have that tag passed to it, ensuring they all agree on the above details.</p>
+<p>There are two kinds of tag formats that are accepted:</p>
+<ul>
+<li>Unified Announcement: <code>v{VERSION}</code> selects all packages with the given version (v1.0.0, v0.1.0-prerelease, etc.)</li>
+<li>Singular Announcement: <code>{PACKAGE-NAME}-v{VERSION}</code> selects only the given package (error if the version doesn't match)</li>
+</ul>
+<p>Note that other criteria may prevent a package from being selected: it has no binaries, it has dist=false, it has publish=false, etc. If you do not specify a --tag, cargo-dist will check if all still-selectable packages share a version, and if they do it will make a Unified Announcement for them (erroring otherwise).</p>
+<p>These two modes support the following workflow:</p>
+<ul>
+<li>Releasing a workspace with only one binary-having package (either mode works but Unified is Cleaner)</li>
+<li>Releasing a workspace where all binary-having packages are versioned in lockstep (Unified)</li>
+<li>Releasing an individual package in a workspace with its own independent versioning (Singular)</li>
+<li>Releasing several packages in a workspace at once, but all independently (Push multiple Singular tags at once)</li>
+</ul>
+<p>Basically the one thing we can't deal with is you saying "I would like a single coherent Announcement (Github Release) for packageA 0.1.0 and packageB 0.2.0", because nothing really ties them together. If you disagree, please let us know how you think it can/should work!</p>
+<p>Although you <em>could</em> use extremely careful versioning in conjuction with Unified Announcements to release a weird subset of the packages in your workspace, you really <em>shouldn't</em> because the Github Releases will be incoherent (v0.1.0 has these random packages, v0.2.0 has these other random packages... huh?), and you're liable to create painful tag collisions.</p>
+<p><strong>WARNING!</strong> cargo-release <em>largely</em> already generates tags that express these exact semantics, except for one annoying corner case (that I've found so far): if you have a non-virtual workspace (the root Cargo.toml is an actual package with child packages), it will always try to tag releases of the root package with a Unified Tag, even when using <code>--workspace</code>. This will not play well with cargo-dist. Initial testing suggests virtual workspaces behave much better.</p>
+<h2>Release Notes</h2>
+<p>Release notes are now temporarily simplified for reliability:</p>
+<ul>
+<li>
+<p>For the purposes of a top level Announcement (Github Release), notes are now no longer associated with the individual apps being published, meaning there's only one set of notes generated.</p>
+</li>
+<li>
+<p>If you have a RELEASES* or CHANGELOG* file in the root of your workspace, we will assume these are the release notes for any Unified Announcement (see the previous section) and try to include the relevant section at the top of the Github Release. This is done with the <a href="https://github.com/taiki-e/parse-changelog" rel="noopener noreferrer">parse_changelog</a> library. If parsing/lookup fails we continue on silently.</p>
+</li>
+<li>
+<p>If the above process succeeds, the heading of the section we found will become the new title of the Github Release. For example, if we find <code>1.2.0</code> matches <code># Version 1.2.0 (2023-01-25)</code>, the title of the Github Release will become "Version 1.2.0 (2023-01-25)".</p>
+</li>
+<li>
+<p>If you are publishing <code>1.2.0-prerelease</code> and we don't find that in your RELEASES/CHANGELOG file, we will now also look for bare <code>1.2.0</code> (stripping the prerelease/build portions), on the assumption that these are the WIP release notes for the version you're prereleasing. This lets you iterate on a version without having to churn headings every time you want to cut a prerelease (we recommend including a parenthetical indicating the version is not yet released).</p>
+</li>
+<li>
+<p>If the above explained deferring happens, we will modify the release note's title to include the prerelease suffix. This ensures they are easily identifiable as prereleases on GitHub's releases page.</p>
+</li>
+<li>
+<p>We will no longer attempt to include your release notes for Singular Announcements (see the previous section). They will only get auto-generated installers/downloads sections. This is obviously suboptimal, and will be fixed, we just need to do design work on the proper way to handle those cases. (Please tell me in <a href="https://github.com/axodotdev/cargo-dist/issues/139" rel="noopener noreferrer">issue #139</a>!)</p>
+</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>The generated Github CI script is now Valid YAML. The script ran fine, but it was rightfully angering YAML linters!</li>
+<li>The generated Github CI now has a single unified "build artifacts" task with a shared matrix for global artifacts (shell script installers) and local artifacts (executable zips) (previously the "global" artifacts had their own weird task)</li>
+<li>We now properly detect if <code>cargo dist init</code> has been run by checking for the presence of <code>[profile.dist]</code> in your root Cargo.toml</li>
+<li>There are now top level fields in dist-manifest.json for release notes for the "full announcement" of all Releases. These fields should be preferred when generating e.g. the body of a Github Release, as they will behave more correctly when there are multiple Releases.</li>
+<li><strong>If multiple binaries are defined by one Cargo package, they will now be considered part of the same "app" and bundled together in executable-zips.</strong> Previously we would give each binary its own "app". The new behaviour matches how 'cargo install' works and is compatible with the expectations of 'cargo binstall'. You kinda have to go out of your way to shove multiple binaries under one package, so we figure if you do, we should respect it!</li>
+<li>If a package specifes publish=false in its Cargo.toml, we will take this as a hint to not dist it. You can override this behaviour by setting <code>[package.metadata.dist] dist = true</code> in that Cargo.toml.</li>
+<li>Installer artifacts are now properly prefixed with the id of the Release they're part of, preventing conflicts when doing multiple Releases at once (installer.sh =&gt; my-app-v1.0.0-installer.sh).</li>
+<li>Installers now properly handle packages that define multiple binaries (installing all of them, just like cargo-install)</li>
+<li>Installers now properly know the Github Release they are going to point to (previously they would guess based on the version of the package which was broken in complicated workflows)</li>
+<li>--installer=github-shell and --installer=github-powershell have had the "github-" prefix removed. They now generically use the concept of an "artifact download url" which will be configurable in the future (for now it only gets populated if ci=github is set and your workspace has a coherent definition for "repository" in its Cargo.tomls).</li>
+<li>We will error out if you try to run <code>cargo dist generate-ci</code> and the <code>cargo-dist-version</code> in your config doesn't match the version you're currently running</li>
+<li>If you're running arm64 macos ("apple silicon"), shell installers will now try to fallback to installing x64 macos binaries if no arm ones are available (so Rosetta can deal with it)</li>
+</ul>
+
+    </div>
+</section>
+    </div>
+</div>
+
+                </main>
+            </div>
+
+            <footer>
+                
+                    <a href="https://github.com/axodotdev/cargo-dist"><div class="github-icon" aria-hidden="true"></div></a>
+                
+                <span>
+                    cargo-dist, MIT OR Apache-2.0
+                </span>
+            </footer>
+        </div>
+
+        
+            <script defer="true" data-domain="opensource.axo.dev" src="https://plausible.io/js/script.js"></script>
+        
+        
+
+        
+    </body>
+</html>

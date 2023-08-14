@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark axo">
+    <head>
+        <title>cargo-dist</title>
+        
+        
+            <link rel="icon" href="/cargo-dist/favicon.ico" />
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <meta name="description" content="Shippable application packaging for Rust" />
+            <meta property="og:description" content="Shippable application packaging for Rust" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="cargo-dist" />
+        
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:image" content="https://www.axo.dev/meta_small.jpeg" />
+        
+        
+            <meta property="og:image:alt" content="axo" />
+        
+        
+            <meta name="twitter:creator" content="@axodotdev" />
+            <meta name="twitter:site" content="@axodotdev" />
+        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <link rel="stylesheet" href="/cargo-dist/oranda-v0.2.0.css" />
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-body">
+                
+                    <div class="repo_banner">
+                        <a href="https://github.com/axodotdev/cargo-dist">
+                            <div class="github-icon" aria-hidden="true"></div>
+                            Check out our GitHub!
+                        </a>
+                    </div>
+                
+
+                <main>
+                    <header>
+                        
+                        <h1 class="title">cargo-dist</h1>
+                        
+    <nav class="nav">
+        <ul>
+            <li><a href="/cargo-dist/">Home</a></li>
+
+            
+
+            
+                <li><a href="/cargo-dist/artifacts/">Install</a></li>
+            
+
+            
+                <li><a href="/cargo-dist/book/">Docs</a></li>
+            
+
+            
+
+            
+                <li><a href="/cargo-dist/changelog/">Changelog</a></li>
+            
+        </ul>
+    </nav>
+
+                    </header>
+
+                    
+<div>
+    <h1>Releases</h1>
+    <div class="releases-wrapper">
+        <nav class="releases-nav">
+            
+                <div class="prereleases-toggle">
+                    <div class="flex h-6 items-center">
+                        <input type="checkbox" id="show-prereleases" />
+                    </div>
+                    <div class="ml-3">
+                        <label for="show-prereleases">Show prereleases</label>
+                    </div>
+                </div>
+            
+
+            <ul>
+                
+                     <li class="">
+                         <a href="v0.1.0/">v0.1.0</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.12/">v0.1.0-prerelease.12</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.11/">v0.1.0-prerelease.11</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.9/">v0.1.0-prerelease.9</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.8/">v0.1.0-prerelease.8</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.10/">v0.1.0-prerelease.10</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.7/">v0.1.0-prerelease.7</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.6/">v0.1.0-prerelease.6</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.5/">v0.1.0-prerelease.5</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.4/">v0.1.0-prerelease.4</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.3/">v0.1.0-prerelease.3</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.2/">v0.1.0-prerelease.2</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.1.0-prerelease.1/">v0.1.0-prerelease.1</a>
+                     </li>
+                
+                     <li class="">
+                         <a href="v0.0.7/">v0.0.7</a>
+                     </li>
+                
+                     <li class="">
+                         <a href="v0.0.6/">v0.0.6</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.8/">v0.0.6-prerelease.8</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.7/">v0.0.6-prerelease.7</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.6/">v0.0.6-prerelease.6</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.5/">v0.0.6-prerelease.5</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.4/">v0.0.6-prerelease.4</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.3/">v0.0.6-prerelease.3</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.6-prerelease.2/">v0.0.6-prerelease.2</a>
+                     </li>
+                
+                     <li class="">
+                         <a href="v0.0.5/">v0.0.5</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.5-prerelease.2/">v0.0.5-prerelease.2</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.5-prerelease.1/">v0.0.5-prerelease.1</a>
+                     </li>
+                
+                     <li class="">
+                         <a href="v0.0.4/">v0.0.4</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.4-prerelease.3/">v0.0.4-prerelease.3</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.4-prerelease.2/">v0.0.4-prerelease.2</a>
+                     </li>
+                
+                     <li class="pre-release hidden">
+                         <a href="v0.0.4-prerelease.1/">v0.0.4-prerelease.1</a>
+                     </li>
+                
+                     <li class="">
+                         <a href="v0.0.3/">v0.0.3</a>
+                     </li>
+                
+            </ul>
+        </nav>
+
+        <div class="releases-list">
+            
+                
+                <section class="release ">
+    <h2 class="" id="tag-v0.1.0">
+        <a href="v0.1.0/">
+            
+                Version 0.1.0 (2023-08-11)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Aug 11 2023 at 12:34 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>The standout features of this release are custom install paths ("install my app to <code>~/.my-app</code> and add that to PATH"), archive checksums (releases should now include <code>my-app.tar.xz.sha256</code>), and refined builds (builds are more fault-tolerant, lower latency, and you can opt out of building <code>--workspace</code>).</p>
+<p>To update your cargo-dist config and release.yml <a href="https://opensource.axo.dev/cargo-dist/" rel="noopener noreferrer">install cargo dist 0.1.0</a> and run <code>cargo dist init</code> (you should also remove rust-toolchain-version from your config, it's deprecated).</p>
+<p>The codebase also got some major cleanups to make it easier to contribute and iterate on installers. All templates are now migrated to jinja2 (as opposed to adhoc string replace), and we have integration tests that can validate that installers work as intended.</p>
+<h2>Features</h2>
+<h3>custom install paths</h3>
+<p>One of our most frequently requested features is here, custom install paths! (And also installers adding things to PATH!)</p>
+<p>When using cargo-dist's script installers (<code>shell</code> and <code>powershell</code>), we need to unpack the binaries to somewhere that will be useful for the user. By default cargo-dist will install to <code>$CARGO_HOME</code> (<code>~/.cargo/bin/</code>), because for our userbase (and many CI environments) that tends to be a user-local directory that's already on PATH (and yes we now properly check and respect <code>$CARGO_HOME</code>!).</p>
+<p>With this feature not only can you customize where binaries get installed to, but the installer scripts now also understand how to check if that directory is on PATH, and if not register it in the appropriate places (and tell the user how to refresh PATH).</p>
+<p>The new install-path config currently takes 3 possible formats (that we will surely expand with a lot more options very quickly):</p>
+<ul>
+<li>"CARGO_HOME": explicitly requests the default behaviour</li>
+<li>"~/.myapp/some/subdir": install to the given subdirectory of $HOME</li>
+<li>"$MY_ENV_VAR/some/subdir/" install to the given subdirectory of $MY_ENV_VAR</li>
+</ul>
+<p>(Note that <code>$HOME/some/subdir</code> is not equivalent to <code>~/some/subdir</code> for various reasons, just always use the latter and we'll take care of those details for you.)</p>
+<p>See the docs for finer details, caveats, and future plans.</p>
+<ul>
+<li>docs
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#install-path" rel="noopener noreferrer">install-path</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#shell" rel="noopener noreferrer">shell installer</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#powershell" rel="noopener noreferrer">powershell installer</a></li>
+</ul>
+</li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/284" rel="noopener noreferrer">add install-path</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/293" rel="noopener noreferrer">teach scripts to edit PATH</a></li>
+</ul>
+</li>
+</ul>
+<h3>archive checksums</h3>
+<p>By default all archives will get a paired checksum file generated and uploaded to the release (default sha256). So for instance if you produce <code>my-app-x86_64-unknown-linux-gnu.tar.gz</code> then there will also be <code>my-app-x86_64-unknown-linux-gnu.tar.gz.sha256</code>. This can be configured with the new <code>checksum</code> config.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h3>refined builds</h3>
+<p>Several changes were made to the way we build your projects, and more knobs were added to the <code>[workspace.metadata.dist]</code> config to allow you to tune the build to suit your needs.</p>
+<p>By default we now:</p>
+<ul>
+<li>
+<p>Build all target platforms on separate machines/tasks, improving concurrency and fault-tolerance (<strong>GitHub Releases should now be twice as fast!</strong>). Previously we would attempt to merge tasks to reduce the number of machines, infamously making both x64 mac and arm64 mac share a machine, doubling the latency of releases. You can get the old behaviour by setting <code>merge-tasks = true</code>.</p>
+</li>
+<li>
+<p>Allow all build tasks to continue running, even if one of them fails (the GitHub Release will only be auto-undrafted if <em>all</em> builds pass). This allows you to salvage as much of a release as possible if only one of your target platforms has a broken build, potentially manually rerunning the task. You can get the old behaviour be setting <code>fail-fast = true</code>.</p>
+</li>
+<li>
+<p>Recursively checkout submodules when fetching your project to build (seems harmless if you don't need it, and makes us work with more projects).</p>
+</li>
+<li>
+<p>Do not try to set the toolchain in rustup when rust-toolchain-version isn't set (and that config is now deprecated, so you should unset it). Pinning of compiler toolchains is really common in major projects like Firefox with dedicated release engineers, but it's kinda overkill for smaller projects. On balance we think letting your release toolchain silently update over time as your infra updates is a better default for most projects (especially since Rust is really good at stability). Anyone who really wants toolchain pinning would be better served by using rust-toolchain.toml (so that integration tests and local dev also check the toolchain used for releases).</p>
+</li>
+</ul>
+<p>In addition, you can now set <code>precise-builds = true</code> if you don't want us to build your apps with <code>--workspace</code>. There's a lot of complicated factors involved here but basically the difference is in how feature selection works in Cargo when you have multiple packages sharing a workspace. <code>--workspace</code> gets you a maximal default, precise-builds gets you a minimal default. For most projects there won't be a difference.</p>
+<ul>
+<li>docs
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#precise-builds" rel="noopener noreferrer">precise-builds</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#merge-tasks" rel="noopener noreferrer">merge-tasks</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#fail-fast" rel="noopener noreferrer">fail-fast</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#rust-toolchain-version" rel="noopener noreferrer">rust-toolchain-version</a></li>
+</ul>
+</li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/277" rel="noopener noreferrer">precise-builds + merge-tasks</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/276" rel="noopener noreferrer">fail-fast</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">recursively checkout submodules</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/275" rel="noopener noreferrer">deprecate rust-toolchain-version</a></li>
+</ul>
+</li>
+</ul>
+<h3>orchestration features</h3>
+<p>A few new CLI features were added to cargo-dist to enable more programmatic manipulation of it. These are mostly uninteresting to normal users, and exist to enable future axo.dev tools that build on top of cargo-dist.</p>
+<ul>
+<li><code>cargo dist init --with-json-config=path/to/config.json</code>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/cli.html#--with-json-config-with_json_config" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/279" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>The dist-manifest-schema.json is now properly hosted in releases
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/schema.html" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/280" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+<h3>changelog "Unreleased" section</h3>
+<p>When parsing your changelog, prereleases can now also match the special "Unreleased" heading,
+making it easier to keep a changelog for the upcoming release without committing to its version.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/simple-guide.html#release-notes" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h2>Fixes</h2>
+<h3>including directories</h3>
+<p>The <code>include</code> config will now work properly if you provide it a path to a directory
+(the functionality was stubbed out but never implemented).</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#include" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/295" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h3>release.yml license</h3>
+<p>At the request of end users, we've added a small legal notice at the top of the generated github release.yml file to indicate that the contents of the file are permissibly licensed. This hopefully makes it easier for package distributors and employees at large companies w/legal review to confidentally use cargo-dist!</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/310" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h2>Maintenance</h2>
+<ul>
+<li>
+<p>codebase broken up into more files</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/294" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>more code pulled out to axoasset</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/295" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>migrated all generated files to jinja2 templates</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/297" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>added an integration test "gallery" of projects that use cargo-dist</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/292" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/296" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/299" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/300" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/302" rel="noopener noreferrer">improvements</a></li>
+</ul>
+</li>
+<li>
+<p>other great cleanups/fixes</p>
+<ul>
+<li>@striezel <a href="https://github.com/axodotdev/cargo-dist/pull/254" rel="noopener noreferrer">fix typos</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.12">
+        <a href="v0.1.0-prerelease.12/">
+            
+                Version 0.1.0-prerelease.12
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.12
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Aug 10 2023 at 21:35 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>The standout features of this release are custom install paths ("install my app to <code>~/.my-app</code> and add that to PATH"), archive checksums (releases should now include <code>my-app.tar.xz.sha256</code>), and refined builds (builds are more fault-tolerant, lower latency, and you can opt out of building <code>--workspace</code>).</p>
+<p>To update your cargo-dist config and release.yml <a href="https://opensource.axo.dev/cargo-dist/" rel="noopener noreferrer">install cargo dist 0.1.0</a> and run <code>cargo dist init</code> (you should also remove rust-toolchain-version from your config, it's deprecated).</p>
+<p>The codebase also got some major cleanups to make it easier to contribute and iterate on installers. All templates are now migrated to jinja2 (as opposed to adhoc string replace), and we have integration tests that can validate that installers work as intended.</p>
+<h2>Features</h2>
+<h3>custom install paths</h3>
+<p>One of our most frequently requested features is here, custom install paths! (And also installers adding things to PATH!)</p>
+<p>When using cargo-dist's script installers (<code>shell</code> and <code>powershell</code>), we need to unpack the binaries to somewhere that will be useful for the user. By default cargo-dist will install to <code>$CARGO_HOME</code> (<code>~/.cargo/bin/</code>), because for our userbase (and many CI environments) that tends to be a user-local directory that's already on PATH (and yes we now properly check and respect <code>$CARGO_HOME</code>!).</p>
+<p>With this feature not only can you customize where binaries get installed to, but the installer scripts now also understand how to check if that directory is on PATH, and if not register it in the appropriate places (and tell the user how to refresh PATH).</p>
+<p>The new install-path config currently takes 3 possible formats (that we will surely expand with a lot more options very quickly):</p>
+<ul>
+<li>"CARGO_HOME": explicitly requests the default behaviour</li>
+<li>"~/.myapp/some/subdir": install to the given subdirectory of $HOME</li>
+<li>"$MY_ENV_VAR/some/subdir/" install to the given subdirectory of $MY_ENV_VAR</li>
+</ul>
+<p>(Note that <code>$HOME/some/subdir</code> is not equivalent to <code>~/some/subdir</code> for various reasons, just always use the latter and we'll take care of those details for you.)</p>
+<p>See the docs for finer details, caveats, and future plans.</p>
+<ul>
+<li>docs
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#install-path" rel="noopener noreferrer">install-path</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#shell" rel="noopener noreferrer">shell installer</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#powershell" rel="noopener noreferrer">powershell installer</a></li>
+</ul>
+</li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/284" rel="noopener noreferrer">add install-path</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/293" rel="noopener noreferrer">teach scripts to edit PATH</a></li>
+</ul>
+</li>
+</ul>
+<h3>archive checksums</h3>
+<p>By default all archives will get a paired checksum file generated and uploaded to the release (default sha256). So for instance if you produce <code>my-app-x86_64-unknown-linux-gnu.tar.gz</code> then there will also be <code>my-app-x86_64-unknown-linux-gnu.tar.gz.sha256</code>. This can be configured with the new <code>checksum</code> config.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h3>refined builds</h3>
+<p>Several changes were made to the way we build your projects, and more knobs were added to the <code>[workspace.metadata.dist]</code> config to allow you to tune the build to suit your needs.</p>
+<p>By default we now:</p>
+<ul>
+<li>
+<p>Build all target platforms on separate machines/tasks, improving concurrency and fault-tolerance (<strong>GitHub Releases should now be twice as fast!</strong>). Previously we would attempt to merge tasks to reduce the number of machines, infamously making both x64 mac and arm64 mac share a machine, doubling the latency of releases. You can get the old behaviour by setting <code>merge-tasks = true</code>.</p>
+</li>
+<li>
+<p>Allow all build tasks to continue running, even if one of them fails (the GitHub Release will only be auto-undrafted if <em>all</em> builds pass). This allows you to salvage as much of a release as possible if only one of your target platforms has a broken build, potentially manually rerunning the task. You can get the old behaviour be setting <code>fail-fast = true</code>.</p>
+</li>
+<li>
+<p>Recursively checkout submodules when fetching your project to build (seems harmless if you don't need it, and makes us work with more projects).</p>
+</li>
+<li>
+<p>Do not try to set the toolchain in rustup when rust-toolchain-version isn't set (and that config is now deprecated, so you should unset it). Pinning of compiler toolchains is really common in major projects like Firefox with dedicated release engineers, but it's kinda overkill for smaller projects. On balance we think letting your release toolchain silently update over time as your infra updates is a better default for most projects (especially since Rust is really good at stability). Anyone who really wants toolchain pinning would be better served by using rust-toolchain.toml (so that integration tests and local dev also check the toolchain used for releases).</p>
+</li>
+</ul>
+<p>In addition, you can now set <code>precise-builds = true</code> if you don't want us to build your apps with <code>--workspace</code>. There's a lot of complicated factors involved here but basically the difference is in how feature selection works in Cargo when you have multiple packages sharing a workspace. <code>--workspace</code> gets you a maximal default, precise-builds gets you a minimal default. For most projects there won't be a difference.</p>
+<ul>
+<li>docs
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#precise-builds" rel="noopener noreferrer">precise-builds</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#merge-tasks" rel="noopener noreferrer">merge-tasks</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#fail-fast" rel="noopener noreferrer">fail-fast</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#rust-toolchain-version" rel="noopener noreferrer">rust-toolchain-version</a></li>
+</ul>
+</li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/277" rel="noopener noreferrer">precise-builds + merge-tasks</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/276" rel="noopener noreferrer">fail-fast</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">recursively checkout submodules</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/275" rel="noopener noreferrer">deprecate rust-toolchain-version</a></li>
+</ul>
+</li>
+</ul>
+<h3>orchestration features</h3>
+<p>A few new CLI features were added to cargo-dist to enable more programmatic manipulation of it. These are mostly uninteresting to normal users, and exist to enable future axo.dev tools that build on top of cargo-dist.</p>
+<ul>
+<li><code>cargo dist init --with-json-config=path/to/config.json</code>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/cli.html#--with-json-config-with_json_config" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/279" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>The dist-manifest-schema.json is now properly hosted in releases
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/schema.html" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/280" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+<h3>changelog "Unreleased" section</h3>
+<p>When parsing your changelog, prereleases can now also match the special "Unreleased" heading,
+making it easier to keep a changelog for the upcoming release without committing to its version.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/simple-guide.html#release-notes" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h2>Fixes</h2>
+<h3>including directories</h3>
+<p>The <code>include</code> config will now work properly if you provide it a path to a directory
+(the functionality was stubbed out but never implemented).</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#include" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/295" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h3>release.yml license</h3>
+<p>At the request of end users, we've added a small legal notice at the top of the generated github release.yml file to indicate that the contents of the file are permissibly licensed. This hopefully makes it easier for package distributors and employees at large companies w/legal review to confidentally use cargo-dist!</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/310" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h2>Maintenance</h2>
+<ul>
+<li>
+<p>codebase broken up into more files</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/294" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>more code pulled out to axoasset</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/295" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>migrated all generated files to jinja2 templates</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/297" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>added an integration test "gallery" of projects that use cargo-dist</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/292" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/296" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/299" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/300" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/302" rel="noopener noreferrer">improvements</a></li>
+</ul>
+</li>
+<li>
+<p>other great cleanups/fixes</p>
+<ul>
+<li>@striezel <a href="https://github.com/axodotdev/cargo-dist/pull/254" rel="noopener noreferrer">fix typos</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.11">
+        <a href="v0.1.0-prerelease.11/">
+            
+                Version 0.1.0-prerelease.11
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.11
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Aug 10 2023 at 21:09 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>The standout features of this release are custom install paths ("install my app to <code>~/.my-app</code> and add that to PATH"), archive checksums (releases should now include <code>my-app.tar.xz.sha256</code>), and refined builds (builds are more fault-tolerant, lower latency, and you can opt out of building <code>--workspace</code>).</p>
+<p>To update your cargo-dist config and release.yml <a href="https://opensource.axo.dev/cargo-dist/" rel="noopener noreferrer">install cargo dist 0.1.0</a> and run <code>cargo dist init</code> (you should also remove rust-toolchain-version from your config, it's deprecated).</p>
+<p>The codebase also got some major cleanups to make it easier to contribute and iterate on installers. All templates are now migrated to jinja2 (as opposed to adhoc string replace), and we have integration tests that can validate that installers work as intended.</p>
+<h2>Features</h2>
+<h3>custom install paths</h3>
+<p>One of our most frequently requested features is here, custom install paths! (And also installers adding things to PATH!)</p>
+<p>When using cargo-dist's script installers (<code>shell</code> and <code>powershell</code>), we need to unpack the binaries to somewhere that will be useful for the user. By default cargo-dist will install to <code>$CARGO_HOME</code> (<code>~/.cargo/bin/</code>), because for our userbase (and many CI environments) that tends to be a user-local directory that's already on PATH (and yes we now properly check and respect <code>$CARGO_HOME</code>!).</p>
+<p>With this feature not only can you customize where binaries get installed to, but the installer scripts now also understand how to check if that directory is on PATH, and if not register it in the appropriate places (and tell the user how to refresh PATH).</p>
+<p>The new install-path config currently takes 3 possible formats (that we will surely expand with a lot more options very quickly):</p>
+<ul>
+<li>"CARGO_HOME": explicitly requests the default behaviour</li>
+<li>"~/.myapp/some/subdir": install to the given subdirectory of $HOME</li>
+<li>"$MY_ENV_VAR/some/subdir/" install to the given subdirectory of $MY_ENV_VAR</li>
+</ul>
+<p>(Note that <code>$HOME/some/subdir</code> is not equivalent to <code>~/some/subdir</code> for various reasons, just always use the latter and we'll take care of those details for you.)</p>
+<p>See the docs for finer details, caveats, and future plans.</p>
+<ul>
+<li>docs
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#install-path" rel="noopener noreferrer">install-path</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#shell" rel="noopener noreferrer">shell installer</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#powershell" rel="noopener noreferrer">powershell installer</a></li>
+</ul>
+</li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/284" rel="noopener noreferrer">add install-path</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/293" rel="noopener noreferrer">teach scripts to edit PATH</a></li>
+</ul>
+</li>
+</ul>
+<h3>archive checksums</h3>
+<p>By default all archives will get a paired checksum file generated and uploaded to the release (default sha256). So for instance if you produce <code>my-app-x86_64-unknown-linux-gnu.tar.gz</code> then there will also be <code>my-app-x86_64-unknown-linux-gnu.tar.gz.sha256</code>. This can be configured with the new <code>checksum</code> config.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h3>refined builds</h3>
+<p>Several changes were made to the way we build your projects, and more knobs were added to the <code>[workspace.metadata.dist]</code> config to allow you to tune the build to suit your needs.</p>
+<p>By default we now:</p>
+<ul>
+<li>
+<p>Build all target platforms on separate machines/tasks, improving concurrency and fault-tolerance (<strong>GitHub Releases should now be twice as fast!</strong>). Previously we would attempt to merge tasks to reduce the number of machines, infamously making both x64 mac and arm64 mac share a machine, doubling the latency of releases. You can get the old behaviour by setting <code>merge-tasks = true</code>.</p>
+</li>
+<li>
+<p>Allow all build tasks to continue running, even if one of them fails (the GitHub Release will only be auto-undrafted if <em>all</em> builds pass). This allows you to salvage as much of a release as possible if only one of your target platforms has a broken build, potentially manually rerunning the task. You can get the old behaviour be setting <code>fail-fast = true</code>.</p>
+</li>
+<li>
+<p>Recursively checkout submodules when fetching your project to build (seems harmless if you don't need it, and makes us work with more projects).</p>
+</li>
+<li>
+<p>Do not try to set the toolchain in rustup when rust-toolchain-version isn't set (and that config is now deprecated, so you should unset it). Pinning of compiler toolchains is really common in major projects like Firefox with dedicated release engineers, but it's kinda overkill for smaller projects. On balance we think letting your release toolchain silently update over time as your infra updates is a better default for most projects (especially since Rust is really good at stability). Anyone who really wants toolchain pinning would be better served by using rust-toolchain.toml (so that integration tests and local dev also check the toolchain used for releases).</p>
+</li>
+</ul>
+<p>In addition, you can now set <code>precise-builds = true</code> if you don't want us to build your apps with <code>--workspace</code>. There's a lot of complicated factors involved here but basically the difference is in how feature selection works in Cargo when you have multiple packages sharing a workspace. <code>--workspace</code> gets you a maximal default, precise-builds gets you a minimal default. For most projects there won't be a difference.</p>
+<ul>
+<li>docs
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#precise-builds" rel="noopener noreferrer">precise-builds</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#merge-tasks" rel="noopener noreferrer">merge-tasks</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#fail-fast" rel="noopener noreferrer">fail-fast</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#rust-toolchain-version" rel="noopener noreferrer">rust-toolchain-version</a></li>
+</ul>
+</li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/277" rel="noopener noreferrer">precise-builds + merge-tasks</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/276" rel="noopener noreferrer">fail-fast</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">recursively checkout submodules</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/275" rel="noopener noreferrer">deprecate rust-toolchain-version</a></li>
+</ul>
+</li>
+</ul>
+<h3>orchestration features</h3>
+<p>A few new CLI features were added to cargo-dist to enable more programmatic manipulation of it. These are mostly uninteresting to normal users, and exist to enable future axo.dev tools that build on top of cargo-dist.</p>
+<ul>
+<li><code>cargo dist init --with-json-config=path/to/config.json</code>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/cli.html#--with-json-config-with_json_config" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/279" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>The dist-manifest-schema.json is now properly hosted in releases
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/schema.html" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/280" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+<h3>changelog "Unreleased" section</h3>
+<p>When parsing your changelog, prereleases can now also match the special "Unreleased" heading,
+making it easier to keep a changelog for the upcoming release without committing to its version.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/simple-guide.html#release-notes" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h2>Fixes</h2>
+<h3>including directories</h3>
+<p>The <code>include</code> config will now work properly if you provide it a path to a directory
+(the functionality was stubbed out but never implemented).</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#include" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/295" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h3>release.yml license</h3>
+<p>At the request of end users, we've added a small legal notice at the top of the generated github release.yml file to indicate that the contents of the file are permissibly licensed. This hopefully makes it easier for package distributors and employees at large companies w/legal review to confidentally use cargo-dist!</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/310" rel="noopener noreferrer">impl</a></li>
+</ul>
+<h2>Maintenance</h2>
+<ul>
+<li>
+<p>codebase broken up into more files</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/294" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>more code pulled out to axoasset</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/295" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>migrated all generated files to jinja2 templates</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/297" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>added an integration test "gallery" of projects that use cargo-dist</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/292" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/296" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/299" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/300" rel="noopener noreferrer">improvements</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/302" rel="noopener noreferrer">improvements</a></li>
+</ul>
+</li>
+<li>
+<p>other great cleanups/fixes</p>
+<ul>
+<li>@striezel <a href="https://github.com/axodotdev/cargo-dist/pull/254" rel="noopener noreferrer">fix typos</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.9">
+        <a href="v0.1.0-prerelease.9/">
+            
+                Version 0.1.0-prerelease.9
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.9
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Aug  4 2023 at 17:27 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.8">
+        <a href="v0.1.0-prerelease.8/">
+            
+                Version 0.1.0-prerelease.8
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.8
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Aug  4 2023 at 15:04 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.10">
+        <a href="v0.1.0-prerelease.10/">
+            
+                Version 0.1.0-prerelease.10
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.10
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Aug  4 2023 at 18:02 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.7">
+        <a href="v0.1.0-prerelease.7/">
+            
+                Version 0.1.0-prerelease.7
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.7
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Jul 27 2023 at 19:17 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.6">
+        <a href="v0.1.0-prerelease.6/">
+            
+                Version 0.1.0-prerelease.6
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.6
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Jul 20 2023 at 15:09 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.5">
+        <a href="v0.1.0-prerelease.5/">
+            
+                Version 0.1.0-prerelease.5
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.5
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Jul 20 2023 at 14:41 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.4">
+        <a href="v0.1.0-prerelease.4/">
+            
+                Version 0.1.0-prerelease.4
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.4
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Jun  5 2023 at 18:13 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.3">
+        <a href="v0.1.0-prerelease.3/">
+            
+                Version 0.1.0-prerelease.3
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.3
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May 11 2023 at 14:45 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This should become 0.1.0, representing the TRUE MVP of cargo-dist!</p>
+<ul>
+<li>
+<p>archive checksum support (sha256 on by default, sha512 available)</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/243" rel="noopener noreferrer">impl</a></li>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#checksum" rel="noopener noreferrer">docs</a></li>
+</ul>
+</li>
+<li>
+<p>submodule checkouts</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/248" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>changelog "Unreleased" section</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/250" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.2">
+        <a href="v0.1.0-prerelease.2/">
+            
+                v0.1.0-prerelease.2
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.2
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May 11 2023 at 04:47 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.1.0-prerelease.1">
+        <a href="v0.1.0-prerelease.1/">
+            
+                v0.1.0-prerelease.1
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.1.0-prerelease.1
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May 10 2023 at 15:44 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        
+    </div>
+</section>
+            
+                
+                <section class="release ">
+    <h2 class="" id="tag-v0.0.7">
+        <a href="v0.0.7/">
+            
+                Version 0.0.7 (2023-05-09)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.7
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  9 2023 at 16:50 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is just a quick little release that makes the npm package tarballs we can generate
+look like "properly" packed tarballs that can be directly published to npm without unpacking them.
+This allows you to <code>npm publish URL_TO_TARBALL</code> directly without any issues.</p>
+<p>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/246" rel="noopener noreferrer">impl</a></p>
+
+    </div>
+</section>
+            
+                
+                <section class="release ">
+    <h2 class="" id="tag-v0.0.6">
+        <a href="v0.0.6/">
+            
+                Version 0.0.6 (2023-05-03)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  5 2023 at 00:29 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This release is a pretty big improvement to cargo-dist's UX!</p>
+<ul>
+<li>
+<p><code>cargo dist init</code> is now interactive and useful for updating your config/install. This is especially useful for updating your project to a new version of cargo-dist, or enabling new installers, as the interactive UI will automatically prompt you to do so and help you keep your config coherent. It also reduces the chances of your CI script getting out of sync, as it runs generate-ci at the end for you. If you want the old non-interactive behaviour, just pass <code>--yes</code> which auto-accepts all recommendations.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/way-too-quickstart.html#setup" rel="noopener noreferrer">docs</a></li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/227" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">fixups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Support for generating an npm project that installs your app into node_modules! Just add "npm" to your installers (using <code>cargo dist init</code> for this is recommended, as it will prompt you to make any other necessary changes to your config).</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/installers.html#npm" rel="noopener noreferrer">docs</a></li>
+<li>impl:
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">initial impl</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/219" rel="noopener noreferrer">fixups</a></li>
+<li>@frol <a href="https://github.com/axodotdev/cargo-dist/pull/224" rel="noopener noreferrer">fix logging</a></li>
+<li>@shadows-withal <a href="https://github.com/axodotdev/cargo-dist/pull/228" rel="noopener noreferrer">support package.json keywords</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>cargo dist plan</code> is a new command for getting a local preview of what your release CI will build. (This is just a synonym for <code>cargo dist manifest</code> but with nicer defaults for what you <em>usually</em> want.)</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/way-too-quickstart.html#check-what-ci-will-build" rel="noopener noreferrer">docs</a></li>
+<li>impl
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">initial impl as "status"</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/232" rel="noopener noreferrer">rename "status" to "plan"</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Bare <code>cargo dist</code> is no longer a synonym for <code>build</code> and now just prints help. This makes it a bit nicer to get your footing with cargo-dist, as we don't suddenly do builds or complain about not being initialized on first run.</p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>Artifact names no longer contain redundant version numbers, so <code>my-app-v1.0.0-installer.sh</code> is now just <code>my-app-installer.sh</code>. This makes it possible to statically link the "latest" build with this format: <a href="https://github.com/axodotdev/cargo-dist/releases/latests/download/cargo-dist-installer.sh" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/releases/latests/download/cargo-dist-installer.sh</a></p>
+<ul>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/commit/8a417f239ef8f8e3ab66c46cf7c3d26afaba1c87" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>The compression format used for executable-zips can now be set with <code>windows-archive</code> and <code>unix-archive</code> configs. Supported values include ".tar.gz", ".tar.xz", ".tar.zstd", and ".zip". The defaults (.zip on windows, .tar.xz elsewhere) are unchanged, as we believe those have the best balance of UX and compatibility.</p>
+<ul>
+<li><a href="https://opensource.axo.dev/cargo-dist/book/config.html#windows-archive" rel="noopener noreferrer">docs</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">impl</a></li>
+</ul>
+</li>
+<li>
+<p>other great cleanups/fixes</p>
+<ul>
+<li>@AlexITC <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">fix typo at README.md</a></li>
+<li>@jwodder <a href="https://github.com/axodotdev/cargo-dist/pull/213" rel="noopener noreferrer">remove trailing spaces from templates</a></li>
+<li>@jwodder <a href="https://github.com/axodotdev/cargo-dist/pull/215" rel="noopener noreferrer">fix broken links in book</a></li>
+<li>@jwodder <a href="https://github.com/axodotdev/cargo-dist/pull/223" rel="noopener noreferrer">remove useless uses of cat from release.yml</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">factor out and use axoproject</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">factor out and use axocli</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/231" rel="noopener noreferrer">0.0.6 docs blitz</a></li>
+<li>@gankra <a href="https://github.com/axodotdev/cargo-dist/pull/234" rel="noopener noreferrer">fix config subsetting</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.8">
+        <a href="v0.0.6-prerelease.8/">
+            
+                Version 0.0.6-prerelease.8 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.8
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  3 2023 at 18:15 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>(AlexITC) fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+<li>(jwodder) remove trailing spaces from templates: <a href="https://github.com/axodotdev/cargo-dist/pull/213" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/213</a></li>
+<li>(jwodder) fix broken links in book: <a href="https://github.com/axodotdev/cargo-dist/pull/215" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/215</a></li>
+<li>npm installer fixups: <a href="https://github.com/axodotdev/cargo-dist/pull/219" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/219</a></li>
+<li>(jwodder) remove useless uses of cat: <a href="https://github.com/axodotdev/cargo-dist/pull/223" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/223</a></li>
+<li>(frol) supress npm installer logs <a href="https://github.com/axodotdev/cargo-dist/pull/224" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/224</a></li>
+<li>interactive init: <a href="https://github.com/axodotdev/cargo-dist/pull/227" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/227</a></li>
+<li>(shadows-withall) support keywords in npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/228" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/228</a></li>
+<li>cli cleanup: <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/230</a></li>
+<li>0.0.6 docs blitz: <a href="https://github.com/axodotdev/cargo-dist/pull/231" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/231</a></li>
+<li>rename "status" to "plan": <a href="https://github.com/axodotdev/cargo-dist/pull/232" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/232</a></li>
+<li>fix config subsetting: <a href="https://github.com/axodotdev/cargo-dist/pull/234" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/234</a></li>
+</ul>
+<p>highlights:</p>
+<ul>
+<li>npm installer</li>
+<li>ability to set archive extension</li>
+<li><code>cargo dist init</code> is now interactive / rerunnable for updates</li>
+<li><code>cargo dist plan</code> added</li>
+<li>bare <code>cargo dist</code> is no longer a synonym for <code>cargo dist build</code></li>
+<li>great cleanups from external contributors</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.7">
+        <a href="v0.0.6-prerelease.7/">
+            
+                Version 0.0.6-prerelease.7 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.7
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  3 2023 at 18:00 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>(AlexITC) fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+<li>(jwodder) remove trailing spaces from templates: <a href="https://github.com/axodotdev/cargo-dist/pull/213" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/213</a></li>
+<li>(jwodder) fix broken links in book: <a href="https://github.com/axodotdev/cargo-dist/pull/215" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/215</a></li>
+<li>npm installer fixups: <a href="https://github.com/axodotdev/cargo-dist/pull/219" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/219</a></li>
+<li>(jwodder) remove useless uses of cat: <a href="https://github.com/axodotdev/cargo-dist/pull/223" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/223</a></li>
+<li>(frol) supress npm installer logs <a href="https://github.com/axodotdev/cargo-dist/pull/224" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/224</a></li>
+<li>interactive init: <a href="https://github.com/axodotdev/cargo-dist/pull/227" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/227</a></li>
+<li>(shadows-withall) support keywords in npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/228" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/228</a></li>
+<li>cli cleanup: <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/230</a></li>
+<li>0.0.6 docs blitz: <a href="https://github.com/axodotdev/cargo-dist/pull/231" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/231</a></li>
+<li>rename "status" to "plan": <a href="https://github.com/axodotdev/cargo-dist/pull/232" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/232</a></li>
+<li>fix config subsetting: <a href="https://github.com/axodotdev/cargo-dist/pull/234" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/234</a></li>
+</ul>
+<p>highlights:</p>
+<ul>
+<li>npm installer</li>
+<li>ability to set archive extension</li>
+<li><code>cargo dist init</code> is now interactive / rerunnable for updates</li>
+<li><code>cargo dist plan</code> added</li>
+<li>bare <code>cargo dist</code> is no longer a synonym for <code>cargo dist build</code></li>
+<li>great cleanups from external contributors</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.6">
+        <a href="v0.0.6-prerelease.6/">
+            
+                Version 0.0.6-prerelease.6 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.6
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  3 2023 at 15:31 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>(AlexITC) fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+<li>(jwodder) remove trailing spaces from templates: <a href="https://github.com/axodotdev/cargo-dist/pull/213" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/213</a></li>
+<li>(jwodder) fix broken links in book: <a href="https://github.com/axodotdev/cargo-dist/pull/215" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/215</a></li>
+<li>npm installer fixups: <a href="https://github.com/axodotdev/cargo-dist/pull/219" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/219</a></li>
+<li>(jwodder) remove useless uses of cat: <a href="https://github.com/axodotdev/cargo-dist/pull/223" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/223</a></li>
+<li>(frol) supress npm installer logs <a href="https://github.com/axodotdev/cargo-dist/pull/224" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/224</a></li>
+<li>interactive init: <a href="https://github.com/axodotdev/cargo-dist/pull/227" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/227</a></li>
+<li>(shadows-withall) support keywords in npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/228" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/228</a></li>
+<li>cli cleanup: <a href="https://github.com/axodotdev/cargo-dist/pull/230" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/230</a></li>
+<li>0.0.6 docs blitz: <a href="https://github.com/axodotdev/cargo-dist/pull/231" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/231</a></li>
+<li>rename "status" to "plan": <a href="https://github.com/axodotdev/cargo-dist/pull/232" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/232</a></li>
+</ul>
+<p>highlights:</p>
+<ul>
+<li>npm installer</li>
+<li>ability to set archive extension</li>
+<li><code>cargo dist init</code> is now interactive / rerunnable for updates</li>
+<li><code>cargo dist plan</code> added</li>
+<li>bare <code>cargo dist</code> is no longer a synonym for <code>cargo dist build</code></li>
+<li>great cleanups from external contributors</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.5">
+        <a href="v0.0.6-prerelease.5/">
+            
+                Version 0.0.6-prerelease.5 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.5
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                May  3 2023 at 01:24 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.4">
+        <a href="v0.0.6-prerelease.4/">
+            
+                Version 0.0.6-prerelease.4 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.4
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Apr 25 2023 at 02:13 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.3">
+        <a href="v0.0.6-prerelease.3/">
+            
+                Version 0.0.6-prerelease.3 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.3
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Apr 18 2023 at 19:16 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.6-prerelease.2">
+        <a href="v0.0.6-prerelease.2/">
+            
+                Version 0.0.6-prerelease.2 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.6-prerelease.2
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Apr 17 2023 at 17:24 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>TODO: generate proper release notes for:</p>
+<ul>
+<li>fix typo at README.md: <a href="https://github.com/axodotdev/cargo-dist/pull/203" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/203</a></li>
+<li>factor out and use axoproject: <a href="https://github.com/axodotdev/cargo-dist/pull/207" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/207</a></li>
+<li>factor out and use axocli: <a href="https://github.com/axodotdev/cargo-dist/pull/209" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/209</a></li>
+<li>unlocked archive formats: <a href="https://github.com/axodotdev/cargo-dist/pull/211" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/211</a></li>
+<li>npm installer: <a href="https://github.com/axodotdev/cargo-dist/pull/210" rel="noopener noreferrer">https://github.com/axodotdev/cargo-dist/pull/210</a></li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release ">
+    <h2 class="" id="tag-v0.0.5">
+        <a href="v0.0.5/">
+            
+                Version 0.0.5 (2023-03-15)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.5
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar 15 2023 at 19:17 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is a bug-fix release for an issue with cross-platform line endings that affected
+users who installed cargo-dist with <code>cargo install</code>. Prebuilt binaries were unaffected.
+Specifically folks reported in [#181] that they were seeing the Shell installer (for Mac and Linux)
+be generated with mixed CRLF and LF line endings, which was causing both functionality
+and development issues (git churn).</p>
+<p>For those unfamiliar- the line endings on Windows machines are different than those
+on Mac and Linux ones and it can cause a lot of unfortunate chaos.</p>
+<p>There are 2 styles of control characters to mark a line break in a text file:</p>
+<ul>
+<li><code>LF</code>, (<code>\n</code>), Linux/Mac: <code>LF</code> stands for "Line Feed"</li>
+<li><code>CRLF</code>, (<code>\r\n</code>), Windows: <code>CR</code> stands for "Carriage Return"</li>
+</ul>
+<p>The presence of CRLF line endings in a shell script will cause issues. Similarly LF
+line endings in a powershell script will cause issues. (Citation needed on the powershell
+thing but sure let's play it safe/idiomatic here.)</p>
+<p>The problem was that the <code>.crate</code> uploaded to crates.io had CRLF endings in some templates
+because <code>cargo publish</code> was run on windows and the git repo was configured to checkout files
+with platform-specific endings. The prebuilt binaries were checked out and built on linux
+(Github CI), and so only used LF endings.</p>
+<p>The reason we got <em>mixed</em> LF and CRLF is because the contents of the installer scripts come from
+mixed sources: the bulk comes from template files on disk, but a few key lines are injected
+programmatically by rust code with <code>writeln</code> (and <code>write</code> with manual <code>\n</code>). Note that Rust's
+println/writeln are guaranteed to emit LF on all platforms (because really CRLF should just be
+fazed out and platform-specific writeln would be a mess). This was good and desirable, the
+main screw up was the line endings in the stored template being forwarded verbatim instead
+of all being rewritten to LF.</p>
+<p>To be EXTRA SURE this doesn't happen in the future we just straight up rewrite all newlines
+before writing the final result, making the newlines stored in cargo-dist's git repo irrelevant.</p>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.5-prerelease.2">
+        <a href="v0.0.5-prerelease.2/">
+            
+                Version 0.0.5-prerelease.2 (2023-03-07)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.5-prerelease.2
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar  7 2023 at 21:34 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is a bug-fix release for an issue with cross-platform line endings. Specifically
+folks reported in [#181] that they were seeing the Shell installer (for Mac and Linux)
+be generated with mixed CRLF and LF line endings, which was causing both functionality
+and development issues (git churn).</p>
+<p>For those unfamiliar- the line endings on Windows machines are different than those
+on Mac and Linux ones and it can cause a lot of unfortunate chaos.</p>
+<p>There are 2 styles of control characters to mark a line break in a text file:</p>
+<ul>
+<li><code>LF</code>, (<code>\n</code>), Linux/Mac: <code>LF</code> stands for "Line Feed"</li>
+<li><code>CRLF</code>, (<code>\r\n</code>), Windows: <code>CR</code> stands for "Carriage Return"</li>
+</ul>
+<p>The presence of CRLF line endings in a shell script will cause issues. Similarly LF
+line endings in a powershell script will cause issues. In some cases, users have
+had shell scripts generate with <em>some</em> CRLF line endings and so we are trying to
+fix that :)</p>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.5-prerelease.1">
+        <a href="v0.0.5-prerelease.1/">
+            
+                Version 0.0.5-prerelease.1 (2023-03-07)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.5-prerelease.1
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar  7 2023 at 19:55 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is a bug-fix release for an issue with cross-platform line endings. Specifically
+folks reported in [#181] that they were seeing the Shell installer (for Mac and Linux)
+be generated with mixed CRLF and LF line endings, which was causing both functionality
+and development issues (git churn).</p>
+<p>For those unfamiliar- the line endings on Windows machines are different than those
+on Mac and Linux ones and it can cause a lot of unfortunate chaos.</p>
+<p>There are 2 styles of control characters to mark a line break in a text file:</p>
+<ul>
+<li><code>LF</code>, (<code>\n</code>), Linux/Mac: <code>LF</code> stands for "Line Feed"</li>
+<li><code>CRLF</code>, (<code>\r\n</code>), Windows: <code>CR</code> stands for "Carriage Return"</li>
+</ul>
+<p>The presence of CRLF line endings in a shell script will cause issues. Similarly LF
+line endings in a powershell script will cause issues. In some cases, users have
+had shell scripts generate with <em>some</em> CRLF line endings and so we are trying to
+fix that :)</p>
+
+    </div>
+</section>
+            
+                
+                <section class="release ">
+    <h2 class="" id="tag-v0.0.4">
+        <a href="v0.0.4/">
+            
+                Version 0.0.4 (2023-03-03)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.4
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar  3 2023 at 15:14 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is a smaller release than originally planned to get some platform support that was blocking folks out the door. Features that were originally planned for this one will ideally be part of the next release.</p>
+<ul>
+<li>
+<p>aarch64-apple-darwin ("apple silicon"/"arm64 macos") is now properly supported, and can be cross-compiled from x64 macos (and x64 can be crossed from arm64)</p>
+<ul>
+<li>if you have rustup installed we will <code>rustup target add</code> before attempting the build, as this is the only requirement (thanks for making it easy, Apple!)</li>
+<li>add this target to your Cargo.toml before you <code>cargo dist regenerate-ci</code> to make sure the CI knows to build it!</li>
+<li>currently both mac builds will be multiplexed onto the same runner. this will increase latency of your releases but should reduce the total resource usage of your CI (by avoiding fixed overheads). We might make this configurable in the future, but if you care about Universal MacOS binaries which staple x64 and arm64 together, your build will end up looking like this anyway (not yet implemented).</li>
+</ul>
+</li>
+<li>
+<p>added rosetta-style "you don't have an arm64 build but you do have an x64 one, so we'll use that" fallback to the powershell installer, as arm64 windows supports automatic emulation (and folks seems to recommend relying on that over bothering with arm64 windows builds at this point?)</p>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.4-prerelease.3">
+        <a href="v0.0.4-prerelease.3/">
+            
+                Version 0.0.4-prerelease.3 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.4-prerelease.3
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar  3 2023 at 14:38 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>This is a smaller release than originally planned to get some platform support that was blocking folks out the door.</p>
+<ul>
+<li>
+<p>aarch64-apple-darwin ("apple silicon"/"arm64 macos") is now properly supported, and can be cross-compiled from x64 macos (and x64 can be crossed from arm64)</p>
+<ul>
+<li>if you have rustup installed we will <code>rustup target add</code> before attempting the build, as this is the only requirement (thanks for making it easy, Apple!)</li>
+<li>add this target to your Cargo.toml before you <code>cargo dist regenerate-ci</code> to make sure the CI knows to build it!</li>
+<li>currently both mac builds will be multiplexed onto the same runner. this will increase latency of your releases but should reduce the total resource usage of your CI (by avoiding fixed overheads). We might make this configurable in the future, but if you care about Universal MacOS binaries which staple x64 and arm64 together, your build will end up looking like this anyway (not yet implemented).</li>
+</ul>
+</li>
+<li>
+<p>added rosetta-style "you don't have an arm64 build but you do have an x64 one, so we'll use that" fallback to the powershell installer, as arm64 windows supports automatic emulation (and folks seems to recommend relying on that over bothering with arm64 windows builds at this point?)</p>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.4-prerelease.2">
+        <a href="v0.0.4-prerelease.2/">
+            
+                Version 0.0.4-prerelease.2 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.4-prerelease.2
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar  1 2023 at 15:14 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <ul>
+<li>aarch64-apple-darwin ("apple silicon"/"arm64 macos") is now properly supported, and can be cross-compiled from x64 macos (and x64 can be crossed from arm64)
+<ul>
+<li>if you have rustup installed we will <code>rustup target add</code> before attempting the build, as this is the only requirement (thanks for making it easy, Apple!)</li>
+<li>add this target to your Cargo.toml before you <code>cargo dist regenerate-ci</code> to make sure the CI knows to build it!</li>
+<li>currently both mac builds will be multiplexed onto the same runner. this will increase latency of your releases but should reduce the total resource usage of your CI (by avoiding fixed overheads). We might make this configurable in the future, but if you care about Universal MacOS binaries which staple x64 and arm64 together, your build will end up looking like this anyway (not yet implemented).</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release pre-release hidden">
+    <h2 class="" id="tag-v0.0.4-prerelease.1">
+        <a href="v0.0.4-prerelease.1/">
+            
+                Version 0.0.4-prerelease.1 (under development)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.4-prerelease.1
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Mar  1 2023 at 14:57 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <ul>
+<li>aarch64-apple-darwin ("apple silicon"/"arm64 macos") is now properly supported, and can be cross-compiled from x64 macos (and x64 can be crossed from arm64)
+<ul>
+<li>if you have rustup installed we will <code>rustup target add</code> before attempting the build, as this is the only requirement (thanks for making it easy, Apple!)</li>
+<li>add this target to your Cargo.toml before you <code>cargo dist regenerate-ci</code> to make sure the CI knows to build it!</li>
+<li>currently both mac builds will be multiplexed onto the same runner. this will increase latency of your releases but should reduce the total resource usage of your CI (by avoiding fixed overheads). We might make this configurable in the future, but if you care about Universal MacOS binaries which staple x64 and arm64 together, your build will end up looking like this anyway (not yet implemented).</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</section>
+            
+                
+                <section class="release ">
+    <h2 class="" id="tag-v0.0.3">
+        <a href="v0.0.3/">
+            
+                Version 0.0.3 (2023-02-27)
+            
+        </a>
+    </h2>
+    <div class="release-info">
+        <span class="flex items-center gap-2">
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+            v0.0.3
+        </span>
+        <span class="flex items-center gap-2">
+            
+                <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+                Feb 27 2023 at 18:40 UTC
+            
+        </span>
+    </div>
+    <div class="release-body">
+        <p>A major overhaul has been done to the design to rationalize some improperly defined features/behaviours. When you update to this version <strong>we recommend following these MIGRATION INSTRUCTIONS</strong>:</p>
+<ol>
+<li>(optional) delete <code>[profile.dist]</code> from your Cargo.toml</li>
+<li>run <code>cargo dist init --ci=github</code></li>
+<li>run <code>cargo dist generate-ci</code></li>
+</ol>
+<p>Performing Step 1 will result in Step 2 getting you our new recommended default profile; linux users were having issues with the debuginfo stuff.</p>
+<p>Step 2 will introduce default configuration to your Cargo.toml that's necessary for the new design to work reliably. You can add <code>--installer=shell</code> and <code>--installer=powershell</code> here if you want those to be setup automatically.</p>
+<p>Step 3 will completely blow away your release.yml CI with the new design. The overall approach is the same but everything is more consistent and coherent.</p>
+<p>The new design is described in detail in <a href="https://axodotdev.github.io/cargo-dist/book/" rel="noopener noreferrer">the new cargo-dist book</a>!</p>
+<h2>Configuration</h2>
+<p>You can now include persistent configuration for cargo-dist in <code>[workspace.metadata.dist]</code> and <code>[package.metadata.dist]</code>. <a href="https://axodotdev.github.io/cargo-dist/book/config.html#metadatadist" rel="noopener noreferrer">See the book for details</a>.</p>
+<h2>Artifact Modes</h2>
+<p>Previously cargo-dist had some vague notions of what it was supposed to do when you invoked it, because there were platform-specific artifacts like executable-zips but also more platform-agnostic ones like installer scripts. This result in flags like <code>--no-builds</code> with messy semantics and hacks to filter out artifacts we "don't want right now" in the CI scripts (<code>--no-builds</code> was is removed in this release, it was busted).</p>
+<p>Now cargo-dist can produce well-defined subsets of the all possible artifacts with the <code>--artifacts</code> flag:</p>
+<blockquote>
+<p>--artifacts = "local" | "global" | "all" | "host"</p>
+<p>Artifacts can be broken up into two major classes:</p>
+<ul>
+<li>local: made for each target system (executable-zips, symbols, MSIs...)</li>
+<li>global: made once (curl-sh installers, npm package, metadata...)</li>
+</ul>
+<p>("all" selects both of these at once)</p>
+<p>Having this distinction lets us run cargo-dist independently on multiple machines without collisions between the outputs by spinning up machines that run something like:</p>
+<ul>
+<li>linux-runner1 (get full manifest): cargo-dist manifest --artifacts=all --output-format=json</li>
+<li>linux-runner2 (get global artifacts): cargo-dist --artifacts=global</li>
+<li>linux-runner3 (get linux artifacts): cargo-dist --artifacts=local --target=x86_64-unknown-linux-gnu</li>
+<li>windows-runner (get windows artifacts): cargo-dist --artifacts=local --target=x86_64-pc-windows-msvc</li>
+</ul>
+<p>If let unspecified, we will pick a fuzzier "host" mode that builds "as much as possible" for the local system. This mode is appropriate for local testing/debugging/demoing. If no --target flags are passed on the CLI then "host" mode will try to intelligently guess which targets to build for, which may include building targets that aren't defined in your metadata.dist config (since that config may exclude the current machine!).</p>
+<p>The specifics of "host" mode are intentionally unspecified to enable us to provider better out-of-the-box UX for local usage. In CI environments you should always specify one of the other tree options!</p>
+</blockquote>
+<p>Note that the introduction of persistent Cargo.toml configuration is crucial to this semantic redesign, as it allows each invocation to be aware of the "full" set of artifacts across all platforms, and then filter down to it.</p>
+<p>If you pass <code>--installer</code>, <code>--ci</code>, or <code>--target</code> this will replace the Cargo.toml value for all packages for that invocation. This is most useful for <code>--target</code> in conjuction with <code>--artifacts=local</code> as it lets us precisely select which platform-specific artifacts to build on the current machine (all 3 of these flags can be passed repeatedly).</p>
+<p><strong>WARING!</strong> If you specify --artifacts and --target, the selected targets can only be a <em>subset</em> of the ones defined in your Cargo.toml. This ensures <code>cargo dist --artifacts=global</code> has behaviour consistent with <code>cargo dist --artifacts=local --target=...</code>, as global artifacts need to be aware of all targets at once. "host" mode bypasses this restriction so that runs of cargo dist on developer machines can do <em>something</em> useful even if the Cargo.toml doesn't know about the host platform.</p>
+<h2>Announcement/Release Selection</h2>
+<p>There is also now a <code>--tag</code> flag for specifying the git tag to use for announcing a new release. This tag must have a specific format detailed below. The tag serves two purposes:</p>
+<ul>
+<li>It specifies the subset of the workspace that we want to Announce/Release</li>
+<li>When using CI, it becomes the unique ID for a Github Release, which is necessary for everything to correctly compute download URLs</li>
+</ul>
+<p><code>cargo dist build</code> and <code>cargo dist manifest</code> now both require that you either specify a --tag that "makes sense", or that your workspace is simple enough for a tag to be computed for you. In CI, each git tag you push will create an independent run of cargo-dist's CI to make a Github Release for that tag, and each invocation of cargo-dist will have that tag passed to it, ensuring they all agree on the above details.</p>
+<p>There are two kinds of tag formats that are accepted:</p>
+<ul>
+<li>Unified Announcement: <code>v{VERSION}</code> selects all packages with the given version (v1.0.0, v0.1.0-prerelease, etc.)</li>
+<li>Singular Announcement: <code>{PACKAGE-NAME}-v{VERSION}</code> selects only the given package (error if the version doesn't match)</li>
+</ul>
+<p>Note that other criteria may prevent a package from being selected: it has no binaries, it has dist=false, it has publish=false, etc. If you do not specify a --tag, cargo-dist will check if all still-selectable packages share a version, and if they do it will make a Unified Announcement for them (erroring otherwise).</p>
+<p>These two modes support the following workflow:</p>
+<ul>
+<li>Releasing a workspace with only one binary-having package (either mode works but Unified is Cleaner)</li>
+<li>Releasing a workspace where all binary-having packages are versioned in lockstep (Unified)</li>
+<li>Releasing an individual package in a workspace with its own independent versioning (Singular)</li>
+<li>Releasing several packages in a workspace at once, but all independently (Push multiple Singular tags at once)</li>
+</ul>
+<p>Basically the one thing we can't deal with is you saying "I would like a single coherent Announcement (Github Release) for packageA 0.1.0 and packageB 0.2.0", because nothing really ties them together. If you disagree, please let us know how you think it can/should work!</p>
+<p>Although you <em>could</em> use extremely careful versioning in conjuction with Unified Announcements to release a weird subset of the packages in your workspace, you really <em>shouldn't</em> because the Github Releases will be incoherent (v0.1.0 has these random packages, v0.2.0 has these other random packages... huh?), and you're liable to create painful tag collisions.</p>
+<p><strong>WARNING!</strong> cargo-release <em>largely</em> already generates tags that express these exact semantics, except for one annoying corner case (that I've found so far): if you have a non-virtual workspace (the root Cargo.toml is an actual package with child packages), it will always try to tag releases of the root package with a Unified Tag, even when using <code>--workspace</code>. This will not play well with cargo-dist. Initial testing suggests virtual workspaces behave much better.</p>
+<h2>Release Notes</h2>
+<p>Release notes are now temporarily simplified for reliability:</p>
+<ul>
+<li>
+<p>For the purposes of a top level Announcement (Github Release), notes are now no longer associated with the individual apps being published, meaning there's only one set of notes generated.</p>
+</li>
+<li>
+<p>If you have a RELEASES* or CHANGELOG* file in the root of your workspace, we will assume these are the release notes for any Unified Announcement (see the previous section) and try to include the relevant section at the top of the Github Release. This is done with the <a href="https://github.com/taiki-e/parse-changelog" rel="noopener noreferrer">parse_changelog</a> library. If parsing/lookup fails we continue on silently.</p>
+</li>
+<li>
+<p>If the above process succeeds, the heading of the section we found will become the new title of the Github Release. For example, if we find <code>1.2.0</code> matches <code># Version 1.2.0 (2023-01-25)</code>, the title of the Github Release will become "Version 1.2.0 (2023-01-25)".</p>
+</li>
+<li>
+<p>If you are publishing <code>1.2.0-prerelease</code> and we don't find that in your RELEASES/CHANGELOG file, we will now also look for bare <code>1.2.0</code> (stripping the prerelease/build portions), on the assumption that these are the WIP release notes for the version you're prereleasing. This lets you iterate on a version without having to churn headings every time you want to cut a prerelease (we recommend including a parenthetical indicating the version is not yet released).</p>
+</li>
+<li>
+<p>If the above explained deferring happens, we will modify the release note's title to include the prerelease suffix. This ensures they are easily identifiable as prereleases on GitHub's releases page.</p>
+</li>
+<li>
+<p>We will no longer attempt to include your release notes for Singular Announcements (see the previous section). They will only get auto-generated installers/downloads sections. This is obviously suboptimal, and will be fixed, we just need to do design work on the proper way to handle those cases. (Please tell me in <a href="https://github.com/axodotdev/cargo-dist/issues/139" rel="noopener noreferrer">issue #139</a>!)</p>
+</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>The generated Github CI script is now Valid YAML. The script ran fine, but it was rightfully angering YAML linters!</li>
+<li>The generated Github CI now has a single unified "build artifacts" task with a shared matrix for global artifacts (shell script installers) and local artifacts (executable zips) (previously the "global" artifacts had their own weird task)</li>
+<li>We now properly detect if <code>cargo dist init</code> has been run by checking for the presence of <code>[profile.dist]</code> in your root Cargo.toml</li>
+<li>There are now top level fields in dist-manifest.json for release notes for the "full announcement" of all Releases. These fields should be preferred when generating e.g. the body of a Github Release, as they will behave more correctly when there are multiple Releases.</li>
+<li><strong>If multiple binaries are defined by one Cargo package, they will now be considered part of the same "app" and bundled together in executable-zips.</strong> Previously we would give each binary its own "app". The new behaviour matches how 'cargo install' works and is compatible with the expectations of 'cargo binstall'. You kinda have to go out of your way to shove multiple binaries under one package, so we figure if you do, we should respect it!</li>
+<li>If a package specifes publish=false in its Cargo.toml, we will take this as a hint to not dist it. You can override this behaviour by setting <code>[package.metadata.dist] dist = true</code> in that Cargo.toml.</li>
+<li>Installer artifacts are now properly prefixed with the id of the Release they're part of, preventing conflicts when doing multiple Releases at once (installer.sh =&gt; my-app-v1.0.0-installer.sh).</li>
+<li>Installers now properly handle packages that define multiple binaries (installing all of them, just like cargo-install)</li>
+<li>Installers now properly know the Github Release they are going to point to (previously they would guess based on the version of the package which was broken in complicated workflows)</li>
+<li>--installer=github-shell and --installer=github-powershell have had the "github-" prefix removed. They now generically use the concept of an "artifact download url" which will be configurable in the future (for now it only gets populated if ci=github is set and your workspace has a coherent definition for "repository" in its Cargo.tomls).</li>
+<li>We will error out if you try to run <code>cargo dist generate-ci</code> and the <code>cargo-dist-version</code> in your config doesn't match the version you're currently running</li>
+<li>If you're running arm64 macos ("apple silicon"), shell installers will now try to fallback to installing x64 macos binaries if no arm ones are available (so Rosetta can deal with it)</li>
+</ul>
+
+    </div>
+</section>
+            
+        </div>
+    </div>
+</div>
+
+                </main>
+            </div>
+
+            <footer>
+                
+                    <a href="https://github.com/axodotdev/cargo-dist"><div class="github-icon" aria-hidden="true"></div></a>
+                
+                <span>
+                    cargo-dist, MIT OR Apache-2.0
+                </span>
+            </footer>
+        </div>
+
+        
+            <script defer="true" data-domain="opensource.axo.dev" src="https://plausible.io/js/script.js"></script>
+        
+        
+
+        
+<script src="/cargo-dist/artifacts.js"></script>
+
+    </body>
+</html>
