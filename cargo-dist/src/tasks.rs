@@ -1218,8 +1218,6 @@ impl<'pkg_graph> DistGraphBuilder<'pkg_graph> {
                 desc: app_desc,
                 license: app_license,
                 homepage: app_homepage_url,
-                // For now, assume all packages contain the same binaries
-                binaries: artifacts[0].binaries.clone(),
                 inner: InstallerInfo {
                     dest_path: artifact_path,
                     app_name: release.app_name.clone(),

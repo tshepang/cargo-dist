@@ -11,6 +11,14 @@ class {{ formula_class }} < Formula
   {% if license %} license "{{ license }}" {% endif %}
 
   def install
-    bin.install {% for binary in binaries %}"{{ binary }}"{{ ", " if not loop.last else "" }} {% endfor %}
+    {%- if arm64.binaries == x86_64.binaries %}
+    bin.install {% for binary in arm64.binaries %}"{{ binary }}"{{ ", " if not loop.last else "" }} {% endfor %}
+    {%- else %}
+    if Hardware::CPU.type == :arm
+      bin.install {% for binary in arm64.binaries %}"{{ binary }}"{{ ", " if not loop.last else "" }} {% endfor %}
+    else
+      bin.install {% for binary in x86_64.binaries %}"{{ binary }}"{{ ", " if not loop.last else "" }} {% endfor %}
+    end
+    {%- endif %}
   end
 end

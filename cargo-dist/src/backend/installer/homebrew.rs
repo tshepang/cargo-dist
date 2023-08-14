@@ -27,8 +27,6 @@ pub struct HomebrewInstallerInfo {
     pub x86_64: Option<ExecutableZipFragment>,
     /// ARM64 artifact
     pub arm64: Option<ExecutableZipFragment>,
-    /// List of binaries to install
-    pub binaries: Vec<String>,
     /// Generic installer info
     pub inner: InstallerInfo,
 }
