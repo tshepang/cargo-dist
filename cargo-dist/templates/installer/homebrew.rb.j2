@@ -1,6 +1,10 @@
 class {{ formula_class }} < Formula
-  {%- if desc %} desc "{{ desc }}" {% endif %}
-  {%- if homepage %} homepage "{{ homepage }}" {% endif %}
+  {%- if desc %}
+  desc "{{ desc }}"
+  {%- endif %}
+  {%- if homepage %}
+  homepage "{{ homepage }}"
+  {%- endif %}
   if Hardware::CPU.type == :arm
     url "{{ inner.base_url }}/{{ arm64.id }}"
     sha256 "{{ arm64.checksum }}"
