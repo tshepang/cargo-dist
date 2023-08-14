@@ -8,7 +8,9 @@ class {{ formula_class }} < Formula
     url "{{ inner.base_url }}/{{ x86_64.id }}"
     sha256 "{{ x86_64.checksum }}"
   end
-  {% if license %} license "{{ license }}" {% endif %}
+  {%- if license %}
+  license "{{ license }}"
+  {%- endif %}
 
   def install
     {%- if arm64.binaries == x86_64.binaries %}
